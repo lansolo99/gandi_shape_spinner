@@ -1,0 +1,108 @@
+body {
+  background-color: #ffffff;
+  margin-top: 100px;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin-top: 100px;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.wrapper-inner svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Toogles */
+
+.wrapper-inner #shape_1{
+  animation: t-domain;
+}
+
+.wrapper-inner #shape_2{
+  animation: t-dns;
+}
+
+.wrapper-inner #shape_3{
+  animation: t-simple-hosting;
+}
+
+.wrapper-inner #shape_4{
+  animation: t-cloud;
+}
+
+.wrapper-inner #shape_5{
+  animation: t-ssl-certificates;
+}
+
+.wrapper-inner #shape_1,
+.wrapper-inner #shape_2,
+.wrapper-inner #shape_3,
+.wrapper-inner #shape_4,
+.wrapper-inner #shape_5{
+  animation-duration: 3s;
+  animation-timing-function:step-start;
+  animation-iteration-count: infinite;
+}
+
+@keyframes t-domain {
+    0% {left:0px;}
+   20% {left:0px;}
+   21% {left:50px;}
+  100% {left:50px;}
+}
+
+@keyframes t-dns {
+    0% {left:50px;}
+   20% {left:50px;}
+   21% {left:0px;}
+   40% {left:0px;}
+   41% {left:50px;}
+  100% {left:50px;}
+}
+
+@keyframes t-simple-hosting {
+    0% {left:50px;}
+   40% {left:50px;}
+   41% {left:0px;}
+   60% {left:0px;}
+   61% {left:50px;}
+  100% {left:50px;}
+}
+
+@keyframes t-cloud {
+    0% {left:50px;}
+   60% {left:50px;}
+   61% {left:0px;}
+   80% {left:0px;}
+   81% {left:50px;}
+  100% {left:50px;}
+}
+
+@keyframes t-ssl-certificates {
+    0% {left:50px;}
+   80% {left:50px;}
+   81% {left:0px;}
+  100% {left:0px;}
+}
+
+/* Progress translate */
+
+.wrapper-inner #shape_1 #p1,
+.wrapper-inner #shape_2 #p2,
+.wrapper-inner #shape_3 #p3,
+.wrapper-inner #shape_4 #p4,
+.wrapper-inner #shape_5 #p5{
+  animation: progress-square 3s infinite linear;
+}
+
+@keyframes progress-square {
+    0% {y: 100px;}
+  100% {y: 0px;}
+}
