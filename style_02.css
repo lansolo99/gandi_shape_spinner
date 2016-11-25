@@ -3,6 +3,13 @@ body {
   margin-top: 100px;
 }
 
+#p1{clip-path:url(#mask1);fill:#11AAAA;}
+    	#p2{clip-path:url(#mask2);fill:#11AAAA;}
+      #p3{clip-path:url(#mask3);fill:#11AAAA;}
+      	#p4{clip-path:url(#mask4);fill:#11AAAA;}
+        #p5{clip-path:url(#mask5);fill:#11AAAA;}
+.outline{fill:#11AAAA;}
+
 .wrapper {
   position: relative;
   overflow: hidden;
@@ -103,6 +110,11 @@ body {
 }
 
 @keyframes progress-square {
-    0% {y: 100px;}
-  100% {y: 0px;}
+    0% {y: 100;}
+  100% {y: 0;}
+}
+
+@-moz-keyframes progress-square{
+  0% {y: 100;}
+100% {y: 0;}
 }
