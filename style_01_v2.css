@@ -14,15 +14,15 @@
   top: 0;
   left: 0;
   /* animation: a-shapes 2s infinite cubic-bezier(.8,.02,.2,.99); */
-  animation: a-shapes 5s infinite ease;
+  animation: a-shapes 3.5s infinite ease;
   /* animation: a-shapes 6s infinite cubic-bezier(.8,.02,.2,.99); */
   transform: scale(0,0) rotateZ(180deg);
 }
 
 .domain{animation-delay: 0s;}
-.simple_hosting {animation-delay: 1.25s;}
-.cloud {animation-delay: 2.5s;}
-.ssl_certificates {animation-delay: 3.75s;}
+.simple_hosting {animation-delay: 0.875s;}
+.cloud {animation-delay: 1.75s;}
+.ssl_certificates {animation-delay: 2.625s;}
 
 @keyframes a-shapes {
   0% {
